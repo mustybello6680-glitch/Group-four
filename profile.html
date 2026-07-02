@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusConnect | My Profile</title>
+
+    <link rel="stylesheet" href="style/profile.css">
+    
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+
+        <h1>👤 My Profile</h1>
+
+        <a href="home.html" class="back-btn">← Dashboard</a>
+
+    </header>
+
+    <div class="profile-card">
+
+        <div class="profile-image">
+
+            <img src="images/default.png" id="previewImage" alt="Profile">
+
+            <input type="file"
+                   id="profileImage"
+                   accept="image/*">
+
+        </div>
+
+        <form id="profileForm">
+
+            <div class="input-group">
+
+                <label>Full Name</label>
+
+                <input
+                    type="text"
+                    id="fullname"
+                    placeholder="Enter Full Name"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Registration Number</label>
+
+                <input
+                    type="text"
+                    id="regno"
+                    placeholder="e.g FCP/CSE/22/1085"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="example@gmail.com"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Phone Number</label>
+
+                <input
+                    type="text"
+                    id="phone"
+                    placeholder="080XXXXXXXX">
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Department</label>
+
+                <input
+                    type="text"
+                    id="department"
+                    placeholder="Computer Science">
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Level</label>
+
+                <select id="level">
+
+                    <option value="">Select Level</option>
+
+                    <option>100 Level</option>
+
+                    <option>200 Level</option>
+
+                    <option>300 Level</option>
+
+                    <option>400 Level</option>
+
+                    <option>500 Level</option>
+
+                </select>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Change Password</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter New Password">
+
+            </div>
+
+            <div class="buttons">
+
+                <button
+                    type="button"
+                    onclick="saveProfile()">
+
+                    Save Changes
+
+                </button>
+
+                <button
+                    type="button"
+                    class="reset"
+                    onclick="clearProfile()">
+
+                    Reset
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="js/profile.js">
+   
+</script>
+
+</body>
+
+</html>

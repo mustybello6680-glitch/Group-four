@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CampusConnect | Lost & Found</title>
+
+<link rel="stylesheet" href="style/lostfound.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Lost & Found</h1>
+
+<form id="lostForm">
+
+<label>Item Name</label>
+
+<input
+type="text"
+id="item"
+placeholder="Enter Item Name">
+
+<label>Category</label>
+
+<select id="category">
+
+<option value="">Select Category</option>
+
+<option>Lost</option>
+
+<option>Found</option>
+
+</select>
+
+<label>Description</label>
+
+<textarea
+id="description"
+placeholder="Describe the Item"></textarea>
+
+<label>Location</label>
+
+<input
+type="text"
+id="location"
+placeholder="Where was it lost/found?">
+
+<button
+type="button"
+onclick="submitLostFound()">
+
+Submit Report
+
+</button>
+
+</form>
+
+</div>
+
+<script src="js/lostfound.js"></script>
+
+</body>
+
+</html>

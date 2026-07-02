@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect | Student Registration</title>
+
+    <link rel="stylesheet" href="style/register.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="register-box">
+
+        <h1>CampusConnect</h1>
+
+        <p>Student Registration</p>
+
+        <form id="registerForm">
+
+            <div class="profile-section">
+
+                <img src="images/default.png"
+                     id="previewImage"
+                     alt="Profile Picture">
+
+                <input
+                    type="file"
+                    id="profileImage"
+                    accept="image/*">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Full Name</label>
+
+                <input
+                    type="text"
+                    id="fullname"
+                    placeholder="Enter Full Name"
+                    required>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Registration Number</label>
+
+                <input
+                    type="text"
+                    id="regno"
+                    placeholder="FCP/CSE/22/1085"
+                    required>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="example@email.com"
+                    required>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Phone Number</label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="08012345678"
+                    required>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Faculty</label>
+
+                <input
+                    type="text"
+                    id="faculty"
+                    placeholder="Faculty of Computing"
+                    required>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Department</label>
+
+                <input
+                    type="text"
+                    id="department"
+                    placeholder="Computer Science"
+                    required>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Level</label>
+
+                <select id="level" required>
+
+                    <option value="">Select Level</option>
+
+                    <option>100 Level</option>
+
+                    <option>200 Level</option>
+
+                    <option>300 Level</option>
+
+                    <option>400 Level</option>
+
+                    <option>500 Level</option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Password</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Create Password"
+                    required>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Confirm Password</label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm Password"
+                    required>
+
+            </div>
+
+            <button
+                type="button"
+                onclick="registerUser()">
+
+                Register
+
+            </button>
+
+        </form>
+
+        <div class="login-link">
+
+            Already have an account?
+
+            <a href="login.html">
+
+                Login Here
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/register.js">
+  
+</script>
+
+</body>
+</html>

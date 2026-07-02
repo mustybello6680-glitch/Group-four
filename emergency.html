@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CampusConnect | Emergency Alert</title>
+
+<link rel="stylesheet" href="style/emergency.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Emergency Alert</h1>
+
+<form id="emergencyForm">
+
+<label>Emergency Type</label>
+
+<select id="type">
+
+<option value="">Select Emergency</option>
+
+<option>Medical Emergency</option>
+
+<option>Fire Outbreak</option>
+
+<option>Security Threat</option>
+
+<option>Accident</option>
+
+<option>Other</option>
+
+</select>
+
+<label>Location</label>
+
+<input
+type="text"
+id="location"
+placeholder="Enter Current Location">
+
+<label>Description</label>
+
+<textarea
+id="description"
+placeholder="Describe the Emergency"></textarea>
+
+<button
+type="button"
+onclick="sendAlert()">
+
+Send Alert
+
+</button>
+
+</form>
+
+</div>
+
+<script src="js/emergency.js"></script>
+
+</body>
+
+</html>

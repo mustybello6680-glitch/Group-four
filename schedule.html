@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusConnect | Smart Schedule</title>
+
+    <link rel="stylesheet" href="style/schedule.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📅 Smart Schedule</h1>
+
+    <form id="scheduleForm">
+
+        <label for="course">Course Title</label>
+
+        <input
+            type="text"
+            id="course"
+            placeholder="e.g. CSC 401 - Software Engineering"
+            required>
+
+        <label for="day">Day</label>
+
+        <select id="day" required>
+
+            <option value="">Select Day</option>
+
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+
+        </select>
+
+        <label for="time">Time</label>
+
+        <input
+            type="time"
+            id="time"
+            required>
+
+        <label for="venue">Venue</label>
+
+        <input
+            type="text"
+            id="venue"
+            placeholder="e.g. Lecture Hall A"
+            required>
+
+        <button
+            type="button"
+            onclick="saveSchedule()">
+
+            Save Schedule
+
+        </button>
+
+    </form>
+
+    <a href="home.html" class="back-btn">
+
+        ← Back to Dashboard
+
+    </a
